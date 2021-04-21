@@ -31,12 +31,13 @@ export default class App extends React.Component {
 
   getLocation = async () => {
     try {
+      console.log("aas");
       await Location.requestBackgroundPermissionsAsync();
-
+      console.log("hi");
       const {
         coords: { latitude, longitude },
       } = await Location.getCurrentPositionAsync(options);
-
+      console.log(latitude, longitude);
       this.getWeather(latitude, longitude);
     } catch (error) {
       Alert.alert("Can't find you.", "So sad");

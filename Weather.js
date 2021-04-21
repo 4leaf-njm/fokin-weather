@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "600",
     color: "#fff",
-    textAlign: "let",
+    textAlign: "left",
   },
 
   textContainer: {
